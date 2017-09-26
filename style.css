@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body{padding:0;margin:0;}
+
+
+#intro{
+	background:url(3.jpg) 50% 0 no-repeat fixed;
+	color:white;
+	height: 800px;
+	margin:0 auto;
+	padding:0;
+}
+#second{
+	background:url(2.jpg) 50% 0 no-repeat fixed;
+	color:white;
+	height: 1300px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0;
+}
+/*#third{
+	background:url(3.jpg) 50% 0 no-repeat fixed;
+	color:white;
+	height: 650px;
+	padding:100px 0 0 0;
+}*/
+.story{
+    margin: 0 auto;
+    min-width: 980px;
+    width: 1100px;
+	font-size:3em;
+	font-family: Microsoft JhengHei;
+}
+#pic{
+	width:24%;
+	float:left;
+	padding:25px;
+	
+	}
