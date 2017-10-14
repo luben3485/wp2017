@@ -1,39 +1,156 @@
-@charset "utf-8";
-/* CSS Document */
-body{padding:0;margin:0;}
-
-
+#logo{
+    position:absolute;
+    top:0px;
+    left:1em;
+    width:6%;
+}
+body{
+    background-color:#404040;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 #intro{
-	background:url(3.jpg) 50% 0 no-repeat fixed;
-	color:white;
-	height: 800px;
-	margin:0 auto;
-	padding:0;
+    display:none;
+}
+#first{
+    animation-duration: 2s;
+    animation-name: slidein;
+    
 }
 #second{
-	background:url(2.jpg) 50% 0 no-repeat fixed;
-	color:white;
-	height: 1300px;
-	margin:0 auto;
-	overflow:hidden;
-	padding:0;
+    animation-duration: 2.25s;
+    animation-name: slidein;
 }
-/*#third{
-	background:url(3.jpg) 50% 0 no-repeat fixed;
-	color:white;
-	height: 650px;
-	padding:100px 0 0 0;
-}*/
-.story{
-    margin: 0 auto;
-    min-width: 980px;
-    width: 1100px;
-	font-size:3em;
-	font-family: Microsoft JhengHei;
+#third{
+    animation-duration: 2.5s;
+    animation-name: slidein;
+    
 }
-#pic{
-	width:24%;
-	float:left;
-	padding:25px;
-	
-	}
+#forth{
+    animation-duration: 2.75s;
+    animation-name: slidein;
+    
+}
+#fifth{
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+}
+@keyframes slidein{
+    0%{
+        padding-left:100%;
+        width:100%;
+    }
+    100%{
+        padding-left:0%;
+        width:100%;
+    }
+}
+
+
+.menu{
+    -webkit-user-select: none;
+    position:absolute;
+    top:20%;
+    left:45%;
+    height:100%;
+    width:100%;
+}
+.menu a,.menu h1{
+    text-decoration: none;
+    padding:1em;
+    color:white;
+    font-family:"Comic Sans MS";
+    font-size:1em;
+    cursor: default;
+}
+#first:hover .rightbar{
+    display:block;
+}
+#second:hover .rightbar{
+    display:block;
+}
+#third:hover .rightbar{
+    display:block;
+}
+#forth:hover .rightbar{
+    display:block;
+}
+#fifth:hover .rightbar{
+    display:block;
+}
+.rightbar{
+    display:none;
+}
+#first .rightbar{
+    position:absolute;
+    top:0%;
+    left:7%;
+}
+#second .rightbar{
+    position:absolute;
+    top:9%;
+    left:7%;
+}
+#third .rightbar{
+    position:absolute;
+    top:17%;
+    left:7%;
+}
+#forth .rightbar{
+    position:absolute;
+    top:26%;
+    left:7%;
+}
+#fifth .rightbar{
+    position:absolute;
+    top:34%;
+    left:7%;
+}
+
+/*        -----------------         */
+#first:hover .leftbar{
+    display:block;
+}
+#second:hover .leftbar{
+    display:block;
+}
+#third:hover .leftbar{
+    display:block;
+}
+#forth:hover .leftbar{
+    display:block;
+}
+#fifth:hover .leftbar{
+    display:block;
+}
+.leftbar{
+    display:none;
+}
+#first .leftbar{
+    position:absolute;
+    top:0%;
+    left:-21%;
+}
+#second .leftbar{
+    position:absolute;
+    top:9%;
+    left:-21%;
+}
+#third .leftbar{
+    position:absolute;
+    top:17%;
+    left:-21%;
+}
+#forth .leftbar{
+    position:absolute;
+    top:26%;
+    left:-21%;
+}
+#fifth .leftbar{
+    position:absolute;
+    top:34%;
+    left:-21%;
+}
+/*   -               --- -----*/
+

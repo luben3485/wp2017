@@ -1,0 +1,121 @@
+#logo{
+    position:absolute;
+    top:0px;
+    left:1em;
+    width:6%;
+}
+body{
+     background-color:#404040;
+    overflow-x: hidden;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+}
+ 
+a img {
+	border: none;
+    width:70%;
+}
+ 
+#framework {
+	margin: 0 auto;
+	width: 512px;	
+	height: 384px;	
+	position: relative;
+}
+ 
+#framework a.prev, #framework a.next {
+	position: absolute;
+	top:160%;
+	display: block;
+	width: 56px;	/* 左右鈕圖片的寬 */
+	height: 53px;	/* 左右鈕圖片的高 */
+	text-indent: -9999px;
+}
+ 
+#framework .prev {
+	background: url('image/left64.png') no-repeat;
+}
+ 
+#framework .next {
+	background: url('image/right64.png') no-repeat;
+	left:100%;
+}
+ 
+#framework .slides {
+    
+	position: relative;
+	width: 800px;	/* 框架中間區塊的寬 */
+	height: 384px;	/* 框架中間區塊的高 */
+    z-index:1;
+}
+ 
+#framework .slides ul {
+
+	position: absolute;
+    top:35%;
+    width: 9990px;
+	height: 100%;
+}
+.slides li{
+        filter:blur(5px);
+}
+ 
+#framework .slides li {
+	width: 800px;	/* 框架中間區塊的寬 */
+	height: 100%;
+	float: left;
+}
+
+
+#back a{
+    position:absolute;
+    top:5%;
+    left:90%;
+    color:white;
+    font-family:"Comic Sans MS";
+    font-size:1em;
+    text-decoration:none;
+    cursor: default; 
+}
+#text h1{
+    display:none;
+    position:absolute;
+    top:35%;
+    left:27%;
+    color:white;
+    font-family:"Comic Sans MS";
+    font-size:2em;
+    z-index:5;
+}
+
+
+@keyframes blurhide{
+    0%{
+        filter:blur(5px);
+    }
+    100%{
+         filter:blur(0px);
+    }
+}
+@keyframes blurshow{
+    0%{
+        filter:blur(0px);
+    }
+    100%{
+         filter:blur(5px);
+    }
+}
+
+.blurhide{
+    animation-duration: 1s;
+    animation-name: blurhide; 
+}
+.blurshow{
+    animation-duration: 1s;
+    animation-name: blurshow; 
+}
+
+

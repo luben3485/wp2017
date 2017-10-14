@@ -1,0 +1,101 @@
+body{
+     background-color:#404040;
+    overflow-x: hidden;
+    font-family:"Comic Sans MS";
+}
+#logo{
+    position:absolute;
+    top:0px;
+    left:1em;
+    width:6%;
+}
+#back a{
+    position:absolute;
+    top:5%;
+    left:90%;
+    color:white;
+
+    font-size:1em;
+    text-decoration:none;
+    cursor: default; 
+}
+#title{
+    position:absolute;
+    font-size:1em;
+    color:white;
+    left:20vw;
+    top:10vh;
+    width:30vw;
+    height:30vh;
+    animation-duration: 1.5s;
+    animation-name: titleslidein;
+}
+#pictop{
+    border: none;
+    position:absolute;
+    left:55vw;
+    top:0vh;
+    width:30%;
+    animation-duration: 2.5s;
+    animation-name: pictopslidein;
+}
+#article{
+    position:absolute;
+    font-size:0.5em;
+    color:white;
+    left:25vw;
+    top:35vh;
+    width:30vw;
+    height:30vh;
+    animation-duration: 2.5s;
+    animation-name: articleslidein;
+}
+#picleft{
+    border: none;
+    position:absolute;
+    left:18vw;
+    top:60vh;
+    width:20%;
+    animation-duration: 3s;
+    animation-name: picleftslidein;
+    
+}
+@keyframes pictopslidein{
+    0%{
+        left:100vw;
+        width:30%;
+    }
+    100%{
+        left:55vw;
+        width:30%;
+    }
+}
+@keyframes picleftslidein{
+    0%{
+        left:-30vw;
+        width:10%;
+    }
+    100%{
+        left:18vw;
+        width:20%;
+    }
+}
+@keyframes titleslidein{
+    0%{
+        left:-30vw;
+    }
+    100%{
+        left:20vw;
+        width:30%;
+    }
+}
+@keyframes articleslidein{
+    0%{
+        left:-30vw;
+
+    }
+    100%{
+        left:25vw;
+
+    }
+}
